@@ -60,26 +60,26 @@ public class ProyectoSpringJpaDtDeberApplication implements CommandLineRunner {
 
 		// DATOS CHOFER
 		Chofer chofer1 = new Chofer();
-		chofer1.setId(12);
-		chofer1.setNombre("Juan");
-		chofer1.setApellido("Lopez");
-		chofer1.setUnidad("pxp123");
-		chofer1.setTipoVehiculo("Bus");
+		chofer1.setId(13);
+		chofer1.setNombre("Juan1");
+		chofer1.setApellido("Lopez1");
+		chofer1.setUnidad("pxp123111");
+		chofer1.setTipoVehiculo("Bus111");
 		this.choferService.choferNuevo(chofer1);
-		this.choferService.actualizarChofer(chofer1);
-		this.choferService.borrarChoferPorID(12);
-		Chofer chofer2 =  this.choferService.buscarChoferPorID(12);
+//		this.choferService.actualizarChofer(chofer1);
+//		this.choferService.borrarChoferPorID(12);
+//		Chofer chofer2 =  this.choferService.buscarChoferPorID(12);
 //		System.out.println("El chofer que esta buscando es: ");
 //		System.out.println(chofer2);
 		
 
 		// DATOS CLIENTE
 		Cliente cliente = new Cliente();
-		cliente.setId(12);
-		cliente.setNombre("Freddy");
-		cliente.setApellido("Trujillo");
-		cliente.setCedula(12345654);
-		cliente.setMonto(125);
+		cliente.setId(13);
+		cliente.setNombre("Freddy111");
+		cliente.setApellido("Trujillo11111");
+		cliente.setCedula(123411);
+		cliente.setMonto(12511111);
 		this.clienteService.clienteNuevo(cliente);
 //		this.clienteService.actualizarCliente(cliente);
 //		this.clienteService.borrarClientePorID(12);
@@ -89,11 +89,11 @@ public class ProyectoSpringJpaDtDeberApplication implements CommandLineRunner {
 
 		// DATOS COMPUTADOR
 		Computador compu = new Computador();
-		compu.setSerie("A2");
-		compu.setModelo("HP");
-		compu.setExistencias(1);
-		compu.setDetalle("Pantalla rota");
-		compu.setServicio("Cambio pantalla");
+		compu.setSerie("A3");
+		compu.setModelo("HP111");
+		compu.setExistencias(11);
+		compu.setDetalle("Pantalla");
+		compu.setServicio("Cambio main");
 		this.computadorService.computadorNuevo(compu);
 //		this.computadorService.actualizarCompuPorID(compu);
 //		this.computadorService.eliminarCompu("A2");
@@ -104,11 +104,11 @@ public class ProyectoSpringJpaDtDeberApplication implements CommandLineRunner {
 
 		// DATOS ESTUDIANTE
 		Estudiante estu = new Estudiante();
-		estu.setId(12);
-		estu.setNombre("Pedro");
-		estu.setApellido("Azul");
-		estu.setCedula(123456);
-		estu.setEspecialidad("Medicina");
+		estu.setId(13);
+		estu.setNombre("Pedro1111");
+		estu.setApellido("Azul1111");
+		estu.setCedula(156);
+		estu.setEspecialidad("Medicina-obste");
 		this.estudianteService.estudianteNuevo(estu);
 //		this.estudianteService.actualizarEstudiantePorID(estu);
 //		this.estudianteService.eliminarEstudiante(12);
@@ -118,11 +118,11 @@ public class ProyectoSpringJpaDtDeberApplication implements CommandLineRunner {
 
 		// DATOS FACULTAD
 		Facultad facu = new Facultad();
-		facu.setId(12);
-		facu.setCarrera("Ingenieria");
-		facu.setNumAlumnos(120);
-		facu.setNumProfesores(5);
-		facu.setCalificaciones(17);
+		facu.setId(13);
+		facu.setCarrera("Ingenieria111");
+		facu.setNumAlumnos(150);
+		facu.setNumProfesores(10);
+		facu.setCalificaciones(15);
 		this.facultadService.facultadNuevo(facu);
 //		this.facultadService.actualizarFacultadPorID(facu);
 //		this.facultadService.eliminarFacultad(12);
@@ -132,9 +132,9 @@ public class ProyectoSpringJpaDtDeberApplication implements CommandLineRunner {
 
 		// DATOS HOSPITAL
 		Hospital hosp = new Hospital();
-		hosp.setId(12);
-		hosp.setDirector("Liz");
-		hosp.setEspecialidad("Obstetrico");
+		hosp.setId(13);
+		hosp.setDirector("Lizeth");
+		hosp.setEspecialidad("Obstetricia");
 		hosp.setNumEmpleados(25);
 		hosp.setNumPacientes(50);
 		this.hospitalService.hospitalNuevo(hosp);
@@ -148,11 +148,11 @@ public class ProyectoSpringJpaDtDeberApplication implements CommandLineRunner {
 		
 		// DATOS IMPRESORA
 		Impresora impr = new Impresora();
-		impr.setSerie("12");
-		impr.setModelo("EPSON");
-		impr.setDanio("Escaner");
-		impr.setServicio("Reparacion");
-		impr.setMonto(45);
+		impr.setSerie("13");
+		impr.setModelo("CANON");
+		impr.setDanio("Escaner - todo");
+		impr.setServicio("Reparacion - venta");
+		impr.setMonto(80);
 		this.iImpresoraService.impresoraNuevo(impr);
 //		this.iImpresoraService.actualizarImpresoraPorID(impr);
 //		this.iImpresoraService.eliminarImpresora("12");
@@ -163,11 +163,11 @@ public class ProyectoSpringJpaDtDeberApplication implements CommandLineRunner {
 
 		// DATOS TECNICO
 		Tecnico tec = new Tecnico();
-		tec.setId(12);
-		tec.setNombre("Denis");
-		tec.setApellido("Tapia");
-		tec.setCargo("Jefe");
-		tec.setArea("Informatica");
+		tec.setId(13);
+		tec.setNombre("Dennis jav");
+		tec.setApellido("Tapia ortz");
+		tec.setCargo("Jefe - unico xD");
+		tec.setArea("Informatica - y mas");
 		this.iTecnicoService.tecnicoNuevo(tec);
 //		this.iTecnicoService.actualizarTecnicoPorID(tec);
 //		this.iTecnicoService.eliminarTecnico(12);
@@ -177,11 +177,11 @@ public class ProyectoSpringJpaDtDeberApplication implements CommandLineRunner {
 
 		// DATOS VENDEDOR
 		Vendedor vend = new Vendedor();
-		vend.setId(12);
+		vend.setId(13);
 		vend.setNombre("Eri");
-		vend.setApellido("Imba");
-		vend.setNumClientes(100);
-		vend.setVentas(10000);
+		vend.setApellido("Imba111111");
+		vend.setNumClientes(10);
+		vend.setVentas(100);
 		this.iVendedorService.vendedorNuevo(vend);
 //		this.iVendedorService.eliminarVendedor(12);
 //		this.iVendedorService.actualizarVendedorPorID(vend);
@@ -191,10 +191,10 @@ public class ProyectoSpringJpaDtDeberApplication implements CommandLineRunner {
 
 		// DATOS PACIENte
 		Paciente paciente1 = new Paciente();
-		paciente1.setId(12);
-		paciente1.setNombre("Javiers");
-		paciente1.setApellido("Ortiz");
-		paciente1.setEdad(27);
+		paciente1.setId(13);
+		paciente1.setNombre("Javier");
+		paciente1.setApellido("Ortiz - tapia");
+		paciente1.setEdad(28);
 		this.pacienteService.pacienteNuevo(paciente1);
 		// this.pacienteService.borrarPacientePorID(1);
 		// this.pacienteService.actualizarPaciente(paciente1);
