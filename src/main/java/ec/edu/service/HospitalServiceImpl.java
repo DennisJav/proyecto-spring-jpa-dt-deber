@@ -15,5 +15,20 @@ public class HospitalServiceImpl implements IHospitalService{
 		// TODO Auto-generated method stub
 		this.hospitalRepo.insertarHospital(hospital);
 	}
+	@Override
+	public void actualizarHospitalPorID(Hospital hospital) {
+		// TODO Auto-generated method stub
+		this.hospitalRepo.actualizarHospital(hospital);
+	}
+	@Override
+	public void eliminarHospital(Integer id) {
+		// TODO Auto-generated method stub
+		this.hospitalRepo.eliminarHospital(id);
+	}
+	@Override
+	public Hospital buscarHospitalPorID(Integer id) {
+		// TODO Auto-generated method stub
+		return this.hospitalRepo.buscarHospital(id);
+	}
 
 }

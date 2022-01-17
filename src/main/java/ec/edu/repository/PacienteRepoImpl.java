@@ -1,9 +1,11 @@
 package ec.edu.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import ec.edu.modelo.Cliente;
 import ec.edu.modelo.Paciente;
 
 @Repository
@@ -31,21 +33,26 @@ public class PacienteRepoImpl implements IPacienteRepo {
 	@Override
 	public Paciente buscarPaciente(Integer id) {
 		// select * from paciente where id =1
+		Object[] datoABuscar = new Object[] { id };
 
-		return null;
+		return this.jdbcTemplate.queryForObject("select * from paciente where id =?", datoABuscar,
+				new BeanPropertyRowMapper<Paciente>(Paciente.class));
 	}
 
 	@Override
 	public void actualizarPaciente(Paciente paciente) {
-		// Update paciente SET id = 2, nombre= 'javier', apellido = 'ortiz', edad 26
-		// where id=1
+		Object[] datosAActualizar = new Object[] { paciente.getId(), paciente.getNombre(), paciente.getApellido(),
+				paciente.getEdad(), paciente.getId() };
+		this.jdbcTemplate.update("update paciente set id=?,nombre= ?, apellido=?, edad=?  where id=?",
+				datosAActualizar);
 
 	}
 
 	@Override
 	public void borrarPaciente(Integer id) {
-		// delete from paciente where id =1
+		Object[] datoABorrar = new Object[] { id };
 
+		this.jdbcTemplate.update("delete from paciente where id =?", datoABorrar);
 	}
 
 }

@@ -17,4 +17,22 @@ public class VendedorServiceImpl implements IVendedorService{
 		this.vendedorRepo.insertarVendedor(vendedor);
 	}
 
+	@Override
+	public void actualizarVendedorPorID(Vendedor vendedor) {
+		// TODO Auto-generated method stub
+		this.vendedorRepo.actualizarVendedor(vendedor);
+	}
+
+	@Override
+	public void eliminarVendedor(Integer id) {
+		// TODO Auto-generated method stub
+		this.vendedorRepo.eliminarVendedor(id);
+	}
+
+	@Override
+	public Vendedor buscarVendedorPorID(Integer id) {
+		// TODO Auto-generated method stub
+		return this.vendedorRepo.buscarVendedor(id);
+	}
+
 }

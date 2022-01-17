@@ -19,4 +19,22 @@ public class PacienteServiceImpl implements IPacienteService{
 		this.pacienteRepo.insertarPaciente(paciente);
 	}
 
+	@Override
+	public Paciente buscarPacientePorID(Integer id) {
+		// TODO Auto-generated method stub
+		return this.pacienteRepo.buscarPaciente(id);
+	}
+
+	@Override
+	public void actualizarPaciente(Paciente paciente) {
+		// TODO Auto-generated method stub
+		this.pacienteRepo.actualizarPaciente(paciente);
+	}
+
+	@Override
+	public void borrarPacientePorID(Integer id) {
+		// TODO Auto-generated method stub
+		this.pacienteRepo.borrarPaciente(id);
+	}
+
 }

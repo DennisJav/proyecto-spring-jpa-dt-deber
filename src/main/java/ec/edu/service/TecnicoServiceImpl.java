@@ -15,5 +15,20 @@ public class TecnicoServiceImpl implements ITecnicoService{
 		// TODO Auto-generated method stub
 		this.tecnicoRepo.insertarTecnico(tecnico);
 	}
+	@Override
+	public void actualizarTecnicoPorID(Tecnico tecnico) {
+		// TODO Auto-generated method stub
+		this.tecnicoRepo.actualizarTecnico(tecnico);
+	}
+	@Override
+	public void eliminarTecnico(Integer id) {
+		// TODO Auto-generated method stub
+		this.tecnicoRepo.eliminarTecnico(id);
+	}
+	@Override
+	public Tecnico buscarTecnicoPorID(Integer id) {
+		// TODO Auto-generated method stub
+		return this.tecnicoRepo.buscarTecnico(id);
+	}
 
 }

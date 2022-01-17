@@ -15,5 +15,20 @@ public class ImpresoraServiceImpl implements IImpresoraService{
 		// TODO Auto-generated method stub
 		this.iImpresoraRepo.insertarImpresora(impresora);
 	}
+	@Override
+	public void actualizarImpresoraPorID(Impresora impresora) {
+		// TODO Auto-generated method stub
+		this.iImpresoraRepo.actualizarImpresora(impresora);
+	}
+	@Override
+	public void eliminarImpresora(String serie) {
+		// TODO Auto-generated method stub
+		this.iImpresoraRepo.eliminarImpresora(serie);
+	}
+	@Override
+	public Impresora buscarImpresoraPorID(String serie) {
+		// TODO Auto-generated method stub
+		return this.iImpresoraRepo.buscarImpresora(serie);
+	}
 
 }
